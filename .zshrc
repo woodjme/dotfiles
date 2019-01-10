@@ -6,6 +6,7 @@ ZSH_CUSTOM=$ZSH/custom
 plugins=(
   git
   zsh-autosuggestions
+  terraform
 )
 source $ZSH/oh-my-zsh.sh
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
