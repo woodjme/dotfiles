@@ -9,5 +9,5 @@ plugins=(
   terraform
 )
 source $ZSH/oh-my-zsh.sh
-alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias dul='du -hs * | sort -h'
