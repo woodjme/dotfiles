@@ -8,6 +8,7 @@ plugins=(
   zsh-autosuggestions
   aws
   terraform
+  kubectl
 )
 source $ZSH/oh-my-zsh.sh
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
