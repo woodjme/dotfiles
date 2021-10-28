@@ -1,6 +1,7 @@
 export EDITOR=nano
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
+eval "$(~/homebrew/bin/brew shellenv)"
 ZSH_THEME="mytheme"
 HIST_STAMPS="dd.mm.yyyy"
 ZSH_CUSTOM=$ZSH/custom
