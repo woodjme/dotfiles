@@ -19,3 +19,11 @@ alias dul='du -hs * | sort -h'
 alias tfp='echo "terraform plan -out="tfplan" " && terraform plan -out="tfplan"'
 alias tfa='echo terraform apply "tfplan" && terraform apply "tfplan"'
 alias tfi='echo terraform init && terraform init'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+aws-sso() {
+  local profile
+  profile=$(aws configure list-profiles | fzf --prompt="AWS Profile > " --height=40% --reverse)
+  [[ -n "$profile" ]] && aws sso login --profile "$profile"
+}
